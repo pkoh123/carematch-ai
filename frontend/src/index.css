@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Caregiver Matching Platform Design System
+   Warm, professional aesthetic with sage/teal and coral palette
+*/
+
+@layer base {
+  :root {
+    /* Core palette - warm & professional */
+    --background: 40 33% 98%;
+    --foreground: 200 25% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 200 25% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 25% 20%;
+
+    /* Sage/Teal primary */
+    --primary: 168 35% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Warm coral accent */
+    --accent: 15 70% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Soft sage secondary */
+    --secondary: 160 20% 92%;
+    --secondary-foreground: 168 35% 32%;
+
+    --muted: 40 20% 94%;
+    --muted-foreground: 200 15% 45%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 15% 88%;
+    --input: 200 15% 88%;
+    --ring: 168 35% 42%;
+
+    --radius: 0.75rem;
+
+    /* Status colors */
+    --success: 158 60% 40%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Sidebar */
+    --sidebar-background: 160 20% 96%;
+    --sidebar-foreground: 200 25% 25%;
+    --sidebar-primary: 168 35% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 160 20% 90%;
+    --sidebar-accent-foreground: 168 35% 32%;
+    --sidebar-border: 200 15% 88%;
+    --sidebar-ring: 168 35% 42%;
+  }
+
+  .dark {
+    --background: 200 25% 10%;
+    --foreground: 40 20% 95%;
+
+    --card: 200 25% 12%;
+    --card-foreground: 40 20% 95%;
+
+    --popover: 200 25% 12%;
+    --popover-foreground: 40 20% 95%;
+
+    --primary: 168 40% 50%;
+    --primary-foreground: 200 25% 10%;
+
+    --accent: 15 65% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --secondary: 200 20% 18%;
+    --secondary-foreground: 168 30% 70%;
+
+    --muted: 200 20% 18%;
+    --muted-foreground: 200 15% 60%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 20% 22%;
+    --input: 200 20% 22%;
+    --ring: 168 40% 50%;
+
+    --success: 158 50% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 85% 55%;
+    --warning-foreground: 200 25% 10%;
+
+    --sidebar-background: 200 25% 8%;
+    --sidebar-foreground: 40 20% 90%;
+    --sidebar-primary: 168 40% 50%;
+    --sidebar-primary-foreground: 200 25% 10%;
+    --sidebar-accent: 200 20% 15%;
+    --sidebar-accent-foreground: 168 30% 70%;
+    --sidebar-border: 200 20% 22%;
+    --sidebar-ring: 168 40% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(168 40% 50%) 100%);
+  }
+  
+  .gradient-accent {
+    background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(25 70% 55%) 100%);
+  }
+}
