@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/', // Use '/' for carematch-ai.github.io (org/user page) or '/repo-name/' for project page
+  base: '/carematch-ai/', // Project page base path
   server: {
     host: "::",
     port: 8080,
