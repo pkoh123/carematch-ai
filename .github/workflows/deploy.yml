@@ -30,14 +30,12 @@ jobs:
           cache-dependency-path: frontend/package-lock.json
 
       - name: Install dependencies
-        run: |
-          cd frontend
-          npm ci
+        working-directory: ./frontend
+        run: npm ci
 
       - name: Build
-        run: |
-          cd frontend
-          npm run build
+        working-directory: ./frontend
+        run: npm run build
         env:
           VITE_API_URL: https://carematch-ai.onrender.com
 
