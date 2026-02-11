@@ -29,7 +29,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:8080",
         "http://localhost:5173",  # Vite dev server
-        "https://pkoh123.github.io/carematch-ai/",  # GitHub Pages
+        "https://pkoh123.github.io",  # GitHub Pages (no path!)
     ],
     allow_credentials=True,
     allow_methods=["*"],
