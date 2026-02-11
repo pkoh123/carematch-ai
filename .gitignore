@@ -10,7 +10,6 @@ lerna-debug.log*
 # Dependencies
 node_modules
 dist
-!frontend/dist
 dist-ssr
 *.local
 
