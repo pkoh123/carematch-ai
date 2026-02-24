@@ -234,7 +234,7 @@ PARSE_RESUME_EXPECTED_OUTPUT = """
   "candidate_name": "Full name of the candidate as shown on their resume",
   "careTypes": "Array of care types the candidate has experience in. Valid values: childcare, eldercare, special-needs, post-surgery, dementia, disability, not applicable",
   "totalYearsOfExperience": "Total number of years of relevant caregiving experience across all care types (numeric value)",
-  "languages": "Array of languages the candidate speaks fluently",
+  "languages": "Array of languages the candidate speaks fluently from the resume. If not, identify the language spoken based on the nationality of the caregiver.",
   "skills": "Array of specific caregiving skills, techniques, or competencies the candidate possesses",
   "certifications": "Array of professional certifications, licenses, or credentials relevant to caregiving (e.g., CPR, First Aid, CNA)",
   "summary": "A concise 2-3 sentence summary highlighting the candidate's caregiving background, key strengths, and areas of expertise",
