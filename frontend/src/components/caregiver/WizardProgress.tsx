@@ -18,14 +18,14 @@ export function WizardProgress({ currentStep }: WizardProgressProps) {
 
   return (
     <div className="w-full py-6">
-      <div className="flex items-center justify-between max-w-2xl mx-auto">
+      <div className="flex items-start justify-between max-w-2xl mx-auto">
         {steps.map((step, index) => {
           const isCompleted = index < currentIndex;
           const isCurrent = index === currentIndex;
           const isUpcoming = index > currentIndex;
 
           return (
-            <div key={step.key} className="flex items-center flex-1 last:flex-none">
+            <div key={step.key} className="flex items-start flex-1 last:flex-none">
               {/* Step circle */}
               <div className="flex flex-col items-center">
                 <div
@@ -54,7 +54,7 @@ export function WizardProgress({ currentStep }: WizardProgressProps) {
 
               {/* Connector line */}
               {index < steps.length - 1 && (
-                <div className="flex-1 h-0.5 mx-2 mt-[-24px]">
+                <div className="flex-1 h-0.5 mx-2 mt-5">
                   <div
                     className={cn(
                       'h-full transition-all duration-500',
